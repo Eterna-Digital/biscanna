@@ -1,56 +1,45 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
-      <div class="d-flex align-center">
+    <v-app-bar app color="#C7F0E8" dark elevation="0" elevate-on-scroll>
+      <div class="d-flex align-center logo-cont">
         <v-img
-          alt="Vuetify Logo"
+          alt="Biscanna Logo"
           class="shrink mr-2"
           contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          src="./assets/logo biscanna top banner.svg"
           transition="scale-transition"
-          width="40"
+          width="180"
         />
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
+        <p class="sub-nav">DE VENTA EXCLUSIVA EN CBMARKET STORE</p>
       </div>
 
-      <v-spacer></v-spacer>
-
       <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://cbmarketstore.com/"
+        depressed
+        tile
+        color="#FFF"
         target="_blank"
-        text
+        class="go-s text-center"
       >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
+        <span class="sub-nav ma-0 pa-0 pr-3 pl-2">IR A LA TIENDA</span>
       </v-btn>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <BiscannaSections />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+import BiscannaSections from "./components/BiscannaSections";
 
 export default {
-  name: 'App',
+  name: "App",
 
   components: {
-    HelloWorld,
+    BiscannaSections,
   },
 
   data: () => ({
@@ -58,3 +47,21 @@ export default {
   }),
 };
 </script>
+
+<style>
+.logo-cont {
+  margin-left: 10%;
+}
+.sub-nav {
+  margin: 0 !important;
+  padding: 0;
+  margin-left: 2rem !important;
+  font-family: "Prompt", sans-serif;
+  color: #707070;
+  letter-spacing: 3px !important;
+  font-size: 0.8rem;
+}
+.go-s {
+  margin-left: 5%;
+}
+</style>
