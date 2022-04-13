@@ -11,7 +11,7 @@
         tile
         color="#C7F0E8"
         target="_blank"
-        class="go-s text-center"
+        class="go-ss text-center"
       >
         <span class="sub-nav ma-0 pa-0 pr-3 pl-2">IR A LA TIENDA</span>
       </v-btn>
@@ -44,5 +44,11 @@ export default {};
     width: 70%;
     text-align: center;
     margin-bottom: 8% !important;
+}
+@media only screen and (max-width: 640px) {
+.store-cont{
+    margin-bottom: 20%;
+    margin-top: 10%;
+}
 }
 </style>

@@ -9,7 +9,7 @@
         />
       </div>
       <div class="txt-cont-one d-flex flex-column">
-        <h1>CBD Premium Oil</h1>
+        <h1 class="qe-h1">CBD Premium Oil</h1>
         <p>Con distintas potencias:</p>
         <div class="num-cont">
           <div class="num" v-for="num in numbers" :key="num.id">
@@ -81,5 +81,38 @@ export default {
 .ones-txt {
   width: 85%;
   text-align: justify;
+}
+@media only screen and (max-width: 640px) {
+  .one-container {
+    margin-top: 10%;
+  }
+  .one-card {
+    margin-bottom: 10%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .img-one {
+    align-items: center;
+  }
+  .oil-p {
+    width: 300px;
+  }
+  .txt-cont-one {
+    margin-left: 8%;
+  }
+  .num-cont {
+    width: 70%;
+    justify-content: flex-start !important;
+  }
+  .num {
+    padding: 2px 12px 0 12px;
+    margin: 0 2px 0 0;
+    font-size: 0.7rem;
+  }
+  .ones-txt {
+    width: 90%;
+    text-align: justify;
+  }
 }
 </style>

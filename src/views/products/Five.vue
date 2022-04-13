@@ -2,12 +2,13 @@
   <div class="five-container">
     <v-card class="five-card d-flex" elevation="0">
       <div class="txt-cont-five d-flex flex-column">
-        <h1>CBD Anti-Stress <br />Cream</h1>
+        <h1 class="qe-h1">CBD Anti-Stress <br />Cream</h1>
         <p class="five-txt">
-          ¿Quieres lucir una piel fresca y radiante? ¡Este es el producto perfecto!<br /><br />
-          Esta crema es perfecta para lucir una piel jóven, pues su ingrediente principal, el CBD,
-          contribuye a prevenir y a mejorar el envejecimiento de la piel, otorgando al rostro 
-          luminosidad e hidratación.
+          ¿Quieres lucir una piel fresca y radiante? ¡Este es el producto
+          perfecto!<br /><br />
+          Esta crema es perfecta para lucir una piel jóven, pues su ingrediente
+          principal, el CBD, contribuye a prevenir y a mejorar el envejecimiento
+          de la piel, otorgando al rostro luminosidad e hidratación.
         </p>
       </div>
       <div class="img-five"></div>
@@ -38,9 +39,35 @@
   height: 90%;
   margin-left: 10%;
   margin-bottom: 12%;
+  margin-top: 0%;
+  margin-bottom: 15%;
 }
-.threes-txt {
-  width: 85%;
+.five-txt {
+  width: 100%;
   text-align: justify;
+}
+@media only screen and (max-width: 640px) {
+  .five-container {
+  margin-top: 5%;
+}
+  .five-card {
+    margin-bottom: 5%;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .img-five {
+    height: 65vh;
+    background-size: 350px;
+    background-position: -20% 0;
+  }
+  .txt-cont-five {
+    height: 50%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+  }
+  .five-txt {
+    width: 90%;
+    text-align: justify;
+  }
 }
 </style>

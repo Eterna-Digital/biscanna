@@ -4,7 +4,7 @@
       <div class="eight-img"></div>
       <div class="spray"></div>
       <div class="txt-eight">
-        <h1 class="h1-8">CBD Spray</h1>
+        <h1 class="h1-8 qe-h1">CBD Spray</h1>
         <p class="eight-txt">
           Una forma distinta de disfrutar los beneficios del CBD.<br /><br />
           Este spray es un auxiliar en el tratamiento de dolor de garganta o
@@ -68,5 +68,40 @@ export default {};
   margin-top: 1.5rem;
   padding-left: 4rem;
   padding-right: 2rem;
+}
+@media only screen and (max-width: 640px) {
+  .card-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 15%;
+  }
+  .eight-img {
+    width: 100%;
+    height: 40vh;
+    background-size: 100%;
+    background-position: center;
+  }
+  .spray {
+    width: 50%;
+    height: 100vh;
+    z-index: 2;
+    background-size: 80%;
+  }
+  .h1-8 {
+    padding-left: 0rem;
+  }
+  .txt-eight {
+    width: 90%;
+    padding-left: 0%;
+    margin-top: 48%;
+    margin-bottom: 0%;
+  }
+  .eight-txt {
+    margin-top: 1.5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
 </style>

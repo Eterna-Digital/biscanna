@@ -40,7 +40,7 @@
     <v-card class="que-es-1" color="#C7F0E8" elevation="0" tile>
       <div class="qe1 d-flex">
         <div class="txt-qe">
-          <h1>¿Qué es el CBD?</h1>
+          <h1 class="qe-h1">¿Qué es el CBD?</h1>
           <p class="text-justify">
             El CBD o cannabidiol es un compuesto único en la planta de
             cannabis.<br />
@@ -160,7 +160,7 @@ export default {};
   width: 30%;
   margin-left: 12%;
 }
-h1 {
+.qe-h1 {
   font-family: "Playfair Display", serif;
   font-weight: bolder;
   font-size: 2.5rem;
@@ -185,5 +185,82 @@ h1 {
   background-color: #abe9dd;
   margin-top: 20% !important;
   margin-bottom: 1.5rem;
+}
+@media only screen and (max-width: 640px) {
+  .inf-container {
+    background: linear-gradient(180deg, #ffffff 30%, #e1f7f3 30%);
+    padding-top: 20%;
+  }
+  .boost-cont {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10%;
+  }
+  .oil-2 {
+    width: 40vw !important;
+    margin-bottom: 5%;
+  }
+  .txt-infs {
+    text-align: justify;
+    margin-top: -10%;
+  }
+  .infito-cont {
+    width: 90%;
+  }
+  .icon {
+    height: 4rem;
+    margin-bottom: 0rem;
+  }
+  .icon .calidad {
+    width: 30px;
+    height: 30px;
+  }
+  .icon .productito {
+    width: 30px;
+    height: 30px;
+  }
+  .txt-infito {
+    width: 100%;
+    text-align: center;
+  }
+  .que-es-1 {
+    width: 100vw;
+    height: 70vh;
+    background-size: 100%;
+    justify-content: center;
+  }
+  .qe1 {
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 55%;
+    display: flex;
+    justify-content: center;
+  }
+  .qe-h1 {
+    padding-top: 0%;
+    padding-bottom: 5%;
+    font-size: 1.5rem;
+  }
+  .que-es-2 {
+    height: 70vh;
+    background-position: center 20%;
+    background-size: 90%;
+  }
+  .hr {
+    width: 3rem;
+    height: 0.2rem;
+    margin-top: -20% !important;
+    margin-bottom: 1.5rem;
+  }
+  .text-justify {
+    width: 90%;
+  }
+  .txt-qe {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center !important;
+  }
 }
 </style>

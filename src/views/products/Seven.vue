@@ -6,7 +6,8 @@
       color="transparent"
     >
       <div class="header-seven">
-        <h1 class="h1-seven">Biscanna</h1>
+        <p class="ma-0 pa-0" style="letter-spacing: 2px">SPORT LINE</p>
+        <h1 class="h1-seven qe-h1">Biscanna</h1>
         <p class="seven-txt-header">
           El CBD puede ser un gran aliado en tu rutina deportiva, muchos atletas
           lo utilizan para aumentar el rendimiento, acelerar el proceso de
@@ -81,7 +82,7 @@ export default {};
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 .h1-seven {
   padding: 0;
@@ -98,10 +99,10 @@ export default {};
   text-align: center;
   padding-bottom: 5%;
 }
-.seven-txt{
-    width: 85%;
-    text-align: justify;
-    padding-bottom: 5%;
+.seven-txt {
+  width: 85%;
+  text-align: justify;
+  padding-bottom: 5%;
 }
 .mr {
   margin-right: 1rem;
@@ -118,7 +119,7 @@ export default {};
 }
 .img-card-sport {
   width: 100%;
-  height: 80vh;
+  height: 85vh;
 }
 .cream {
   background-image: url("../../assets/sec 8_img sport cream.png");
@@ -134,5 +135,46 @@ export default {};
   background-image: url("../../assets/sec 8_img sport balm x2.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media only screen and (max-width: 640px) {
+  .seven-container {
+    margin-top: 10%;
+    padding-bottom: 5%;
+  }
+  .card-seven {
+    width: 100%;
+  }
+  .header-seven {
+    margin-top: 15%;
+  }
+  .seven-txt-header {
+    width: 80%;
+    text-align: justify;
+    padding-bottom: 10%;
+  }
+  .mr {
+    margin-right: 0rem;
+  }
+  .ml {
+    margin-left: 0rem;
+  }
+  .img-card-sport {
+    width: 100%;
+    height: 65vh;
+    margin-top: 10%;
+  }
+  .cream {
+    background-position: center;
+    background-size: contain;
+  }
+  .balm {
+    background-position: center;
+    background-size: contain;
+  }
+  .x2 {
+    margin-top: 10%;
+    background-position: center;
+    background-size: contain;
+  }
 }
 </style>

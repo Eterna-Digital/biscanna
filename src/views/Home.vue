@@ -53,4 +53,21 @@ export default {};
   font-family: "Nunito", sans-serif;
   font-weight: lighter;
 }
+@media only screen and (max-width: 640px) {
+  .home-container {
+    background-image: url(../assets/biscanna-mobile-img.jpg);
+    background-size: 100%;
+  }
+  .card-home {
+    width: 90%;
+    margin-left: 8%;
+  }
+  .logo-home {
+    width: 350px;
+    height: 60px;
+    margin-bottom: 1rem;
+    margin-top: 50%;
+    margin-left: -1rem;
+  }
+}
 </style>

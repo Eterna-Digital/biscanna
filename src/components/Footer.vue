@@ -1,8 +1,14 @@
 <template>
   <v-footer color="#707070" class="d-flex footer">
-    <v-card class="txt-footer d-flex flex-column" color="transparent" elevation="0">
+    <v-card
+      class="txt-footer d-flex flex-column"
+      color="transparent"
+      elevation="0"
+    >
       <v-btn icon small><v-icon color="#fff">mdi-instagram</v-icon></v-btn>
-      <a href="https://cbmarketstore.com/" class="link-f" target="_blank"><p class="txt-ftr1">cbmarketstore.com</p></a>
+      <a href="https://cbmarketstore.com/" class="link-f" target="_blank"
+        ><p class="txt-ftr1">cbmarketstore.com</p></a
+      >
       <p class="txt-ftr mb-1">Términos y Condiciones</p>
       <p class="txt-ftr">BISCANNA 2022</p>
     </v-card>
@@ -34,7 +40,15 @@ export default {};
   padding: 0;
   font-size: 0.6rem;
 }
-.link-f{
-    text-decoration: none;
+.link-f {
+  text-decoration: none;
+}
+@media only screen and (max-width: 640px) {
+  .footer {
+    height: 25vh;
+  }
+  .txt-footer {
+    width: 100%;
+  }
 }
 </style>
